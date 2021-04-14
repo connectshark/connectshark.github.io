@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VSCODE 設定個人Snippets | NoseGates</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/images/logo.jpg">
+    <link rel="alternate" type="application/html+css+vuepress" title="NoseGates 卡關|分享|部落格">
+    <link rel="me" href="https://connectshark.github.io/">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/images/sample-logo192x.png">
+    <link rel="mask-icon" href="/images/sample-logo192x.png" color="#3eaf7c">
+    <script data-ad-client="ca-pub-1922728573988253" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="VSCODE IDE 上設定客製的snippets 讓操作更得心應手">
+    <meta name="google-site-verification" content="LWk7bQX885aWXhlRzpmpZBRwGA3IystRMVAxe-RADME">
+    <meta content="NoseGates" property="og:title">
+    <meta content="https://connectshark.github.io/" property="og:url">
+    <meta content="web,前端,分享,卡關,vue,vuepress" property="og:description">
+    <meta content="/images/logo.jpg" property="og:image">
+    <meta content="NoseGates部落格" property="og:site_name">
+    <meta content="web,前端,分享,卡關,vue,vuepress" name="keyword">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/images/sample-logo192x.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.0eb9994b.css" as="style"><link rel="preload" href="/assets/js/app.076bd214.js" as="script"><link rel="preload" href="/assets/js/3.7d67b20a.js" as="script"><link rel="preload" href="/assets/js/53.677758a5.js" as="script"><link rel="preload" href="/assets/js/7.994cbad1.js" as="script"><link rel="prefetch" href="/assets/js/10.0a83f7d3.js"><link rel="prefetch" href="/assets/js/11.419b4404.js"><link rel="prefetch" href="/assets/js/12.22c5789a.js"><link rel="prefetch" href="/assets/js/13.5514b4a7.js"><link rel="prefetch" href="/assets/js/14.95474aa8.js"><link rel="prefetch" href="/assets/js/15.45cbe00d.js"><link rel="prefetch" href="/assets/js/16.dcc28fbb.js"><link rel="prefetch" href="/assets/js/17.01115f12.js"><link rel="prefetch" href="/assets/js/18.cbfe6519.js"><link rel="prefetch" href="/assets/js/19.64b90dcd.js"><link rel="prefetch" href="/assets/js/20.323d872b.js"><link rel="prefetch" href="/assets/js/21.cadb527e.js"><link rel="prefetch" href="/assets/js/22.309e637a.js"><link rel="prefetch" href="/assets/js/23.bf540c6d.js"><link rel="prefetch" href="/assets/js/24.5d7371a7.js"><link rel="prefetch" href="/assets/js/25.5ac363c7.js"><link rel="prefetch" href="/assets/js/26.ea92ef8d.js"><link rel="prefetch" href="/assets/js/27.028d0753.js"><link rel="prefetch" href="/assets/js/28.4a3e5900.js"><link rel="prefetch" href="/assets/js/29.fe56f89d.js"><link rel="prefetch" href="/assets/js/30.c61d6d16.js"><link rel="prefetch" href="/assets/js/31.cb6d590d.js"><link rel="prefetch" href="/assets/js/32.735792ce.js"><link rel="prefetch" href="/assets/js/33.512597fe.js"><link rel="prefetch" href="/assets/js/34.98e48ee8.js"><link rel="prefetch" href="/assets/js/35.a167aaf0.js"><link rel="prefetch" href="/assets/js/36.e9c242c7.js"><link rel="prefetch" href="/assets/js/37.64ccbe8f.js"><link rel="prefetch" href="/assets/js/38.508d9978.js"><link rel="prefetch" href="/assets/js/39.4a71f799.js"><link rel="prefetch" href="/assets/js/4.cf1720d0.js"><link rel="prefetch" href="/assets/js/40.fb7d89e1.js"><link rel="prefetch" href="/assets/js/41.c620ada8.js"><link rel="prefetch" href="/assets/js/42.b1c6a9bc.js"><link rel="prefetch" href="/assets/js/43.bb8b68bb.js"><link rel="prefetch" href="/assets/js/44.ad9fcfeb.js"><link rel="prefetch" href="/assets/js/45.8e576641.js"><link rel="prefetch" href="/assets/js/46.b722b8ee.js"><link rel="prefetch" href="/assets/js/47.7cab99d9.js"><link rel="prefetch" href="/assets/js/48.763a0e46.js"><link rel="prefetch" href="/assets/js/49.df24e359.js"><link rel="prefetch" href="/assets/js/5.eef5cd70.js"><link rel="prefetch" href="/assets/js/50.4b7c7055.js"><link rel="prefetch" href="/assets/js/51.1cfea6f7.js"><link rel="prefetch" href="/assets/js/52.7a0c34b9.js"><link rel="prefetch" href="/assets/js/54.f2608551.js"><link rel="prefetch" href="/assets/js/55.ad234090.js"><link rel="prefetch" href="/assets/js/6.0d6a1da3.js"><link rel="prefetch" href="/assets/js/8.79b117a0.js"><link rel="prefetch" href="/assets/js/9.5057fbf3.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.55a609d1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0eb9994b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.jpg" alt="NoseGates" class="logo"> <span class="site-name can-hide">NoseGates</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/connectshark" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.linkedin.com/in/%E6%81%A9%E9%A8%B0-%E8%91%89-935867189/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Linkedin
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://t.me/NoseGates" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  telegram
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/connectshark" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.linkedin.com/in/%E6%81%A9%E9%A8%B0-%E8%91%89-935867189/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Linkedin
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://t.me/NoseGates" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  telegram
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/update.html" class="sidebar-link">更新日誌</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>作品頁</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/Javascript30/" class="sidebar-heading clickable"><span>Javascript30挑戰</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/Phaser3/" class="sidebar-heading clickable"><span>Phaser3中文教學</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>卡關文章</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/teach/env.html" class="sidebar-link">Vue Cli中設定環境變數</a></li><li><a href="/teach/vscodesnippet.html" aria-current="page" class="active sidebar-link">VSCODE 設定個人Snippets</a></li><li><a href="/teach/vfor.html" class="sidebar-link">v-for點擊加入class的技巧</a></li><li><a href="/teach/howImportVant.html" class="sidebar-link">如何局部引入vant組件</a></li><li><a href="/teach/arrayfind.html" class="sidebar-link">陣列運用筆記 find()</a></li><li><a href="/teach/arrayfindIndex.html" class="sidebar-link">陣列運用筆記 findIndex()</a></li><li><a href="/teach/searchHighlight.html" class="sidebar-link">在Vue中製作搜尋highlight[part1]</a></li><li><a href="/teach/searchHighlight2.html" class="sidebar-link">在Vue中製作搜尋highlight[part2]</a></li><li><a href="/teach/arrayReduce.html" class="sidebar-link">陣列運用筆記 reduce()</a></li><li><a href="/teach/polacode.html" class="sidebar-link">截圖你的code - polacode</a></li></ul></section></li><li><a href="/aboutme.html" class="sidebar-link">關於我</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vscode-設定個人snippets"><a href="#vscode-設定個人snippets" class="header-anchor">#</a> VSCODE 設定個人Snippets</h1> <p>目前vscode上已經有許多好用的code snippets的套件</p> <p>但是不是有曾經覺得snippets總是會多一個<code>;</code></p> <p>或總是會多一個換行符號<s>還是只有我這麼覺得</s></p> <p>想自己設定但又不知到怎麼辦</p> <p><strong>這時候就是設定個人的snippets時間</strong></p> <p>讓我們手把手來設定看看吧</p> <h2 id="手把手設定文件"><a href="#手把手設定文件" class="header-anchor">#</a> 手把手設定文件</h2> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>這裡使用<code>.javascript</code>檔作示範</p></div> <h3 id="打開你的vscode"><a href="#打開你的vscode" class="header-anchor">#</a> <strong>打開你的vscode</strong></h3> <p><img src="https://i.imgur.com/EfQfGuI.png" alt="打開vscode吧"></p> <h3 id="點擊使用者片段設定user-snippets"><a href="#點擊使用者片段設定user-snippets" class="header-anchor">#</a> 點擊使用者片段設定<code>User snippets</code></h3> <p><img src="https://i.imgur.com/YqTbo1W.png" alt="點擊使用者片段設定"></p> <h3 id="選擇你要設定片段的語言"><a href="#選擇你要設定片段的語言" class="header-anchor">#</a> 選擇你要設定片段的語言</h3> <p><img src="https://i.imgur.com/u6QEMLA.png" alt="選擇你要設定片段的副檔名"></p> <p>在這裡選擇<code>javascript</code></p> <p>會自動開啟一個json檔
+<img src="https://i.imgur.com/6si1Sgr.png" alt="選擇javascript"></p> <h3 id="觀看-刪除-範例文字"><a href="#觀看-刪除-範例文字" class="header-anchor">#</a> 觀看 <s>刪除</s> 範例文字</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token comment">// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and </span>
+	<span class="token comment">// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:</span>
+	<span class="token comment">// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the </span>
+	<span class="token comment">// same ids are connected.</span>
+	<span class="token comment">// Example:</span>
+	<span class="token comment">// &quot;Print to console&quot;: {</span>
+	<span class="token comment">// 	&quot;prefix&quot;: &quot;log&quot;,</span>
+	<span class="token comment">// 	&quot;body&quot;: [</span>
+	<span class="token comment">// 		&quot;console.log('$1');&quot;,</span>
+	<span class="token comment">// 		&quot;$2&quot;</span>
+	<span class="token comment">// 	],</span>
+	<span class="token comment">// 	&quot;description&quot;: &quot;Log output to console&quot;</span>
+	<span class="token comment">// }</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>為各位翻譯</strong></p> <div class="language-json extra-class"><div class="highlight-lines"><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><div class="highlighted"> </div><br><br><br></div><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;Print to console&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;prefix&quot;</span><span class="token operator">:</span> <span class="token string">&quot;log&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;console.log('$1')&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Log output to console&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>Print to console</code>:此片段的標題可以自訂</p> <p><code>prefix</code>:此片段的快捷鍵</p> <p><code>body</code>:選取此片段會出現的內容,主要的片段都設定在這裡</p> <p><code>description</code>:此片段的描述,可多加說明,會出現在片段的後方</p> <h3 id="存檔-測試"><a href="#存檔-測試" class="header-anchor">#</a> 存檔 測試</h3> <p>成功顯示
+<img src="https://i.imgur.com/vUCKFin.png" alt="測試"></p> <h2 id="太好用的新增第二個吧"><a href="#太好用的新增第二個吧" class="header-anchor">#</a> 太好用的新增第二個吧</h2> <p>設定以後成功以後自然會想客製更多自己的片段</p> <p>但這裡要多注意</p> <p>若要新增其他片段請在<strong>原檔案</strong>裡繼續編輯</p> <div class="language-json extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br></div><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;Print to console&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;prefix&quot;</span><span class="token operator">:</span> <span class="token string">&quot;log&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;console.log('$1')&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Log output to console&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;Print to console&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;prefix&quot;</span><span class="token operator">:</span> <span class="token string">&quot;log&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;console.log('$1')&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Log output to console&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>用逗點的方式接續在下面即可</p> <h2 id="後續"><a href="#後續" class="header-anchor">#</a> 後續</h2> <p>其實很多好用的snippet都是其他人自己客製以後打包給所有人使用</p> <p>多增加幾個以後搞不好能發佈給其他人用</p> <p>謝謝各位的觀看</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最後更新時間:</span> <span class="time">2021/4/14 上午8:53:06</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/teach/env.html" class="prev">
+        Vue Cli中設定環境變數
+      </a></span> <span class="next"><a href="/teach/vfor.html">
+        v-for點擊加入class的技巧
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.076bd214.js" defer></script><script src="/assets/js/3.7d67b20a.js" defer></script><script src="/assets/js/53.677758a5.js" defer></script><script src="/assets/js/7.994cbad1.js" defer></script>
+  </body>
+</html>
